@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+section.cover-image-block .top-holder {
+    padding: 82px 0 67px 0;
+    width: 100%;
+}
+body.page-about section.cover-image-block .top-holder {
+    padding: 82px 0 67px 35px;
+}
+.breadcrumbs span {
+    color: #fff;
+}
+section.cover-image-block .top-holder .breadcrumbs {
+    color: #fff;
+    margin-bottom: 16px;
+    max-width: 680px;
+    padding-left: 0;
+}
+section.cover-image-block .top-holder .breadcrumbs .divider {
+    color: #fff;
+}
+section.cover-image-block .top-holder .breadcrumbs a {
+    color: #fff;
+}
+section.cover-image-block .top-holder .breadcrumbs a:hover {
+    color: #b2b3b6;
+}
+section.cover-image-block .top-holder h2 {
+    margin-bottom: 12px;
+    max-width: 680px;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 51px;
+}
+section.cover-image-block .top-holder .content {
+    letter-spacing: 0.2px;
+    font-size: 20px;
+    max-width: 680px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+section.cover-image-block .top-holder .content br{
+    display: none;
+}
+section.cover-image-block .top-holder .content p {
+    margin: 0;
+}
+section.cover-image-block .image-holder {
+    content: "";
+    height: 432px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.page-become-a-customer section.cover-image-block .top-holder .breadcrumbs {
+    margin-bottom: 15px;
+}
+
+/*Careers / about*/
+body.page-careers section.cover-image-block .top-holder h2{
+    max-width: 680px;
+}
+
+/*fAQ*/
+body.page-faq .cover-image-block .top-holder{
+    padding: 86px 0 128px 45px;
+}
+
+/*Become a customer*/
+body.page-become-a-customer section.cover-image-block .top-holder {
+    padding: 86px 0 49px 45px;
+}
+
+/*page-delivery*/
+body.page-delivery section.cover-image-block .top-holder {
+    padding: 86px 0 68px 45px;
+}
+
+
+/*MEDIA QUERY*/
+@media (max-width: 1200px) {
+    .cover-image-block {
+        padding: 0 !important;
+    }
+}
+@media (max-width: 992px) {
+    section.cover-image-block .image-holder {
+        height: 350px;
+    }
+    body.page-become-a-customer section.cover-image-block .top-holder {
+        padding: 160px 0 40px 0;
+    }
+    section.cover-image-block .top-holder{
+        padding: 40px 0 !important;
+    }
+}
+@media (max-width: 768px) {
+    section.cover-image-block .top-holder .content {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    section.cover-image-block .image-holder {
+        height: 300px;
+    }
+    section.cover-image-block .image-holder {
+        height: 250px;
+    }
+    body.page-become-a-customer section.cover-image-block .top-holder {
+        padding: 140px 0 40px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    section.cover-image-block .top-holder .content {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    section.cover-image-block .top-holder{
+        padding: 30px 0 !important;
+    }
+}

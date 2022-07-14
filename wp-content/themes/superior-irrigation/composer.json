@@ -1,0 +1,46 @@
+{
+  "name": "bop-design/heritage",
+  "type": "wordpress-theme",
+  "description": "A spiffy new theme for Heritage by Bop Design based on _s, or underscores.",
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "ACF Blocks",
+    "Bootstrap",
+    "Gutenberg",
+    "css",
+    "sass",
+    "responsive",
+    "front-end",
+    "web"
+  ],
+  "homepage": "https://www.bopdesign.com/",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Bop Design",
+      "email": "admin@bopdesign.com",
+      "homepage": "https://www.bopdesign.com/"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.11.0",
+    "php": ">=7.3"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "wptrt/wpthemereview": "^0.2.1",
+    "php-parallel-lint/php-parallel-lint": "^1.2.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1.1",
+    "wp-cli/i18n-command": "^2.2.5",
+    "wp-cli/wp-cli-bundle": "^2.5.0",
+    "wp-coding-standards/wpcs": "^2.3.0"
+  },
+  "scripts": {
+    "format": "phpcbf --report=summary,source",
+    "lint": "phpcs --report=summary,source",
+    "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+    "pot": "wp i18n make-pot . languages/heritage.pot --exclude=node_modules,vendor,dist --allow-root"
+  }
+}

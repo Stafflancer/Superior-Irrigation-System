@@ -1,0 +1,49 @@
+@import '../../src/scss/components/vars';
+
+section.carousel-logos {
+  padding: 47px 0 104px;
+
+  @media (max-width: $md) {
+    padding: 40px 0 75px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 40px 0 50px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 40px 0;
+  }
+
+  .section-holder {
+    & > h3 {
+      text-align: center;
+      margin: 0 0 54px 0;
+      font-weight: 700;
+
+      @media (max-width: $md) {
+        margin-bottom: 49px;
+      }
+
+      @media (max-width: $sm) {
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: $xs) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .logos_carousel {
+    .logo {
+      display: flex;
+      justify-content: center;
+      padding: 0 15px;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}

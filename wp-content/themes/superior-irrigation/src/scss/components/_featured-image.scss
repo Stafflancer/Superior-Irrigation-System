@@ -1,0 +1,14 @@
+.featured-hero {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100px;
+
+	@include media-breakpoint-up( md ) {
+		height: 200px;
+	}
+
+	@include media-breakpoint-up( xl ) {
+		height: 400px;
+	}
+}

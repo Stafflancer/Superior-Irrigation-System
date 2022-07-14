@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+section.subpage-listing {
+    padding: 91px 0 104px;
+}
+section.subpage-listing .breadcrumbs {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+section.subpage-listing .content-block,
+section.subpage-listing h2 {
+    max-width: 930px;
+    text-align: center;
+}
+section.subpage-listing h2 {
+    font-weight: 700;
+    margin: 0 auto 15px;
+}
+section.subpage-listing .content-block {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 27px;
+}
+section.subpage-listing .content-block p {
+    margin: 0;
+}
+.card-main {
+    max-width: 905px;
+    margin: 0 auto;
+}
+section.subpage-listing .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 50px -15px 0;
+}
+section.subpage-listing .cards .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 15px;
+    color: #000;
+    margin: 0 0 60px 0;
+    width: 33.33%;
+}
+section.subpage-listing .cards .card:hover img{
+    transform: scale(1.2);
+}
+section.subpage-listing .cards .card:hover .heading {
+    color: #ed9c21;
+}
+section.subpage-listing .cards .card .image {
+    margin-bottom: 24px;
+    overflow: hidden;
+    height: 237px;
+}
+section.subpage-listing .cards .card .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+section.subpage-listing .cards .card .heading {
+    color: #1e3060;
+    font-size: 24px;
+    -webkit-transition: color 0.15s;
+    -o-transition: color 0.15s;
+    transition: color 0.15s;
+    line-height: 28.8px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+}
+section.subpage-listing .cards .card .content {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 12px;
+}
+section.subpage-listing .cards .card .btn-holder {
+    margin-top: 21px;
+}
+
+section.subpage-listing .cards .card .btn-holder .custom-btn {
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 145px;
+    padding: 7px 10px;
+    line-height: 19px;
+    display: none;
+}
+section.subpage-listing .cards .card:hover .btn-theme-yellow{
+    color: #ed9c21;
+    border-color: #ed9c21;
+    background-color: transparent;
+}
+
+.product-btns.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-btns.buttons .wp-block-button .custom-btn {
+    padding: 10px 12px;
+    min-width: 170px;
+}
+.product-btns.buttons .wp-block-button .custom-btn:hover{
+    background-color: #000;
+}
+.buttons.product-btns .wp-block-button {
+    margin: 0 5px;
+}
+/*Media Query*/
+@media (max-width: 1200px) {
+    section.subpage-listing .cards .card {
+        width: 33.33%;
+    }
+}
+@media (max-width: 992px) {
+    section.subpage-listing {
+        padding: 150px 0 22px;
+    }
+    section.subpage-listing .cards .card .heading {
+        font-size: 22px;
+    }
+    section.subpage-listing .cards .card {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    section.subpage-listing .cards .card .heading {
+        font-size: 20px;
+    }
+    section.subpage-listing .cards .card .btn-holder .custom-btn {
+        font-size: 16px;
+    }
+    section.subpage-listing {
+        padding: 140px 0 22px;
+    }
+    section.subpage-listing .content-block {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    section.subpage-listing .cards {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 576px) {
+    section.subpage-listing {
+        padding: 130px 0 22px;
+    }
+    section.subpage-listing .cards .card .btn-holder {
+        margin-top: 15px;
+    }
+    section.subpage-listing .cards .card .content {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    section.subpage-listing .cards .card .heading {
+        font-size: 18px;
+    }
+    section.subpage-listing .breadcrumbs {
+        margin-bottom: 20px;
+    }
+    section.subpage-listing .content-block {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    section.subpage-listing .cards {
+        margin-top: 30px;
+    }
+    section.subpage-listing .cards .card {
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+    section.subpage-listing .cards .card .image {
+        margin-bottom: 18px;
+    }
+}

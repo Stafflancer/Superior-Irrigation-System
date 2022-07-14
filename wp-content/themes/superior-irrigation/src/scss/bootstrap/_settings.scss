@@ -1,0 +1,39 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+// scss-docs-start color-variables
+$heritage-blue: #236192;
+$dark-blue:     #002e5d;
+$blue:          #5e8ab4;
+$baby-blue:     #9bb8d3;
+$light-blue:    #d1dde6;
+$heritage-gold: #eaaa00;
+$yellow:        #fed141;
+$dark-metal:    #1d252d;
+$gray:          #888b8d;
+$light-gray:    #f2f2f2;
+
+// Create your own map
+$heritage-colors: (
+	'heritage-blue': $heritage-blue,
+	'dark-blue':     $dark-blue,
+	'blue':          $blue,
+	'baby-blue':     $baby-blue,
+	'light-blue':    $light-blue,
+	'heritage-gold': $heritage-gold,
+	'yellow':        $yellow,
+	'dark-metal':    $dark-metal,
+	'gray':          $gray,
+	'light-gray':    $light-gray,
+);
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:   $heritage-blue;
+$secondary: $dark-blue;
+$light:     $light-gray;
+$dark:      $dark-metal;
+// scss-docs-end theme-color-variables

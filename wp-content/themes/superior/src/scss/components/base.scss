@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: 400;
+  color: $black;
+  background-color: $white;
+  display: flex;
+  height: auto;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .footer {
+    margin-top: auto;
+  }
+}
+
+.container {
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &.wide {
+    max-width: 1216px;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: color $delay;
+}
+
+/* STYLES FOR WP CONTENT */
+.page-content {
+  clear: both;
+
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.alignright {
+  text-align: right;
+}
+
+img.alignleft, .wp-caption.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+
+img.alignright, .wp-caption.alignright {
+  float: right;
+  margin-left: 15px;
+}
+
+.wp-caption {
+  max-width: 100%;
+
+  &.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.wp-caption-text {
+  font-family: $font-family-base;
+  font-size: 18px;
+}
+
+@media (max-width: $sm) {
+  img.alignleft, .wp-caption.alignleft {
+    float: none;
+    margin-right: 0;
+  }
+  img.alignright, .wp-caption.alignright {
+    float: none;
+    margin-left: 0;
+  }
+}
+
+/* END STYLES FOR WP CONTENT */
+
+section {
+  &:first-of-type {
+    margin-top: 92px;
+  }
+
+  .text-start {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-end {
+    text-align: right;
+  }
+
+  &.has-background.video-as-background {
+    position: relative;
+
+    figure.video-background {
+      margin: 0;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      & > video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      & + .container {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  &.has-background.image-as-background {
+    position: relative;
+
+    figure.image-background {
+      margin: 0;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      & + .container {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    .section-holder {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &.has-parallax {
+    overflow: hidden;
+
+    &.has-background.image-as-background {
+      figure.image-background {
+        background-attachment: fixed;
+
+        @media (max-width: $md) {
+          background-attachment: scroll;
+        }
+      }
+    }
+  }
+
+  &.has-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+  }
+
+  &.has-overlay-color-heritage-blue::before {
+    background-color: $heritage_blue;
+  }
+  &.has-overlay-color-dark-blue::before {
+    background-color: $heritage_dark_blue;
+  }
+  &.has-overlay-color-blue::before {
+    background-color: $blue;
+  }
+  &.has-overlay-color-baby-blue::before {
+    background-color: $heritage_baby_blue;
+  }
+  &.has-overlay-color-light-blue::before {
+    background-color: $heritage_light_blue;
+  }
+  &.has-overlay-color-heritage-gold::before {
+    background-color: $heritage_gold;
+  }
+  &.has-overlay-color-yellow::before {
+    background-color: $heritage_yellow;
+  }
+  &.has-overlay-color-dark-metal::before {
+    background-color: $heritage_dark_metal;
+  }
+  &.has-overlay-color-gray::before {
+    background-color: $heritage_gray;
+  }
+  &.has-overlay-color-light-gray::before {
+    background-color: $heritage_light_gray;
+  }
+  &.has-overlay-color-black::before {
+    background-color: $black;
+  }
+  &.has-overlay-color-white::before {
+    background-color: $white;
+  }
+
+  &.has-heritage-blue-background-color {
+    background-color: $heritage_blue;
+  }
+  &.has-dark-blue-background-color {
+    background-color: $heritage_dark_blue;
+  }
+  &.has-blue-background-color {
+    background-color: $blue;
+  }
+  &.has-baby-blue-background-color {
+    background-color: $heritage_baby_blue;
+  }
+  &.has-light-blue-background-color {
+    background-color: $heritage_light_blue;
+  }
+  &.has-heritage-gold-background-color {
+    background-color: $heritage_gold;
+  }
+  &.has-yellow-background-color {
+    background-color: $heritage_yellow;
+  }
+  &.has-dark-metal-background-color {
+    background-color: $heritage_dark_metal;
+  }
+  &.has-gray-background-color {
+    background-color: $heritage_gray;
+  }
+  &.has-light-gray-background-color {
+    background-color: $heritage_light_gray;
+  }
+  &.has-white-background-color {
+    background-color: $white;
+  }
+  &.has-black-background-color {
+    background-color: $black;
+  }
+}
+
+.text-heritage-blue {
+  color: $heritage_blue;
+}
+
+.text-dark-blue {
+  color: $heritage_dark_blue;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-baby-blue {
+  color: $heritage_baby_blue;
+}
+
+.text-light-blue {
+  color: $heritage_light_blue;
+}
+
+.text-heritage-gold {
+  color: $heritage_gold;
+}
+
+.text-yellow {
+  color: $heritage_yellow;
+}
+
+.text-dark-metal {
+  color: $heritage_dark_metal;
+}
+
+.text-gray {
+  color: $heritage_gray;
+}
+
+.text-light-gray {
+  color: $heritage_light_gray;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  li {
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $heritage_baby_blue;
+    margin: 0 5px;
+    transition: background-color $delay;
+    cursor: pointer;
+
+    &:hover, &.slick-active {
+      background-color: $heritage_gold;
+    }
+
+    button {
+      font-size: 0;
+    }
+  }
+}
+
+input {
+  outline: none;
+}

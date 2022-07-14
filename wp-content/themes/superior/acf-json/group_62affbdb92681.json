@@ -1,0 +1,280 @@
+{
+    "key": "group_62affbdb92681",
+    "title": "Block: Partner Steps Block",
+    "fields": [
+        {
+            "key": "field_62affbe489e0f",
+            "label": "Content Block",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62affbed89e10",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62affbf589e11",
+            "label": "Steps",
+            "name": "steps",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62affc0189e12",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62affc1589e13",
+                    "label": "Heading",
+                    "name": "heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62affc2089e14",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_62affc2a89e15",
+                    "label": "Buttons",
+                    "name": "buttons",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_62affc3589e16",
+                            "label": "Button",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_62affcaf89e17",
+                            "label": "Button Style",
+                            "name": "button_style",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "fill": "Fill",
+                                "outline": "Outline"
+                            },
+                            "allow_null": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_62affcc989e18",
+                            "label": "Button Color",
+                            "name": "button_color",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "heritage-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#236192; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Heritage Blue<\/div>",
+                                "dark-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#002e5d; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Dark Blue<\/div>",
+                                "blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#5e8ab4; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Blue<\/div>",
+                                "baby-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#9bb8d3; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Baby Blue<\/div>",
+                                "light-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#d1dde6; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Light Blue<\/div>",
+                                "heritage-gold": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#ed9c21; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Heritage Gold<\/div>",
+                                "yellow": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#fed141; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Yellow<\/div>",
+                                "dark-metal": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#1d252d; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Dark Metal<\/div>",
+                                "gray": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#888b8d; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Gray<\/div>",
+                                "light-gray": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#f5f5f5; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Light Gray<\/div>",
+                                "white": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#fff; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>White<\/div>",
+                                "black": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#000; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Black<\/div>",
+                                "dark-gray": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#373a36; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Dark Gray<\/div>",
+                                "cobalt-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#1466bf; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Cobalt Blue<\/div>"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_62affcf789e19",
+            "label": "Background Options",
+            "name": "background_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5d1624dd9d3e0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_62affd0d89e1a",
+            "label": "Display Options",
+            "name": "display_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_6190d0faf40c0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/partner-steps-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655709668
+}

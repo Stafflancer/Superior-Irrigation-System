@@ -1,0 +1,83 @@
+{
+    "key": "group_62ab290dcc860",
+    "title": "Fields: Button — To Clone",
+    "fields": [
+        {
+            "key": "field_62ab2918eaf38",
+            "label": "Button Link",
+            "name": "button_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_62ab2929eaf39",
+            "label": "Button Style",
+            "name": "button_style",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fill": "Fill",
+                "outline": "Outline"
+            },
+            "allow_null": 0,
+            "default_value": "fill",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_62ab294ceaf3a",
+            "label": "Button Color",
+            "name": "button_color",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5d16233395958"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655384769
+}

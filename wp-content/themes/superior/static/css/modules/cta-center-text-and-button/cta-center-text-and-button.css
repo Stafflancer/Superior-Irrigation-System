@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+.cta-center-text-and-button{
+	padding: 113px 0 130px;
+    position: relative;
+}
+.cta-center-text-and-button .section-holder{
+	text-align: center;
+}
+.cta-center-text-and-button .section-holder h3 {
+    font-size: 34px !important;
+    line-height: 44px !important;
+    font-weight: 700;
+    margin-bottom: 20px !important;
+}
+.cta-center-text-and-button .section-holder .subtitle   {
+    max-width: 803px;
+    margin: 0 auto 52px;
+    line-height: 27px;
+}
+.cta-center-btn {
+    text-transform: uppercase;
+    color: #fff;
+    background: #1e3a71;
+    min-width: 360px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 13px 0;
+    transition: all 0.3s ease-in-out;
+}
+.cta-center-btn:hover{
+	background: #1466bf;
+}
+.cta-center-text-and-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 580px;
+    background-image: url(../../../img/shape-left.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9999;
+}
+
+/*Media Query */
+@media  (min-width: 769px) and (max-width: 1200px){
+    .cta-center-text-and-button .section-holder .subtitle{
+        margin: 0 auto 30px !important;
+    }
+}
+@media (max-width: 768px){
+    .cta-center-text-and-button .section-holder .subtitle{
+        margin: 0 auto 15px;
+    }
+    .cta-center-text-and-button .section-holder h3{
+        font-size: 30px !important;
+        margin-bottom: 10px !important;
+    }
+    .cta-center-btn{
+        min-width: 260px !important;
+        font-size: 17px;
+    }
+}
+@media (max-width: 576px){
+    .cta-center-text-and-button .section-holder h3{
+        font-size: 25px !important;
+    }
+}

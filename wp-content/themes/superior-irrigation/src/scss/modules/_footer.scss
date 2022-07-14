@@ -1,0 +1,36 @@
+footer {
+	.footer-menu {
+		ul {
+			li {
+				a {
+					color: $link-color;
+					font-weight: $font-weight-bold;
+
+					&:hover {
+						color: $link-hover-color;
+					}
+				}
+
+				&.current-menu-item {
+					a {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-social-icons {
+		a {
+			.svg-icon {
+				fill: $link-color;
+			}
+
+			&:hover {
+				.svg-icon {
+					fill: $link-hover-color;
+				}
+			}
+		}
+	}
+}

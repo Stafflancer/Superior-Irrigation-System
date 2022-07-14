@@ -1,0 +1,74 @@
+@import '../../src/scss/components/vars';
+
+section.locations-block {
+  padding: 109px 0 110px;
+
+  @media (max-width: $md) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $xs) {
+    padding: 40px 0;
+  }
+
+  h3 {
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: $heritage_gold;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 19px 0 0 0;
+
+    @media (max-width: $md) {
+      margin: 10px 0 0 0;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  .locations {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 817px;
+    margin: 38px auto 0;
+    font-size: 18px;
+
+    .location {
+      width: 33.33%;
+      margin-bottom: 12px;
+      text-align: center;
+
+      @media (max-width: $sm) {
+        padding-left: 20px;
+      }
+
+      @media (max-width: $xs) {
+        width: 50%;
+        padding-left: 0;
+      }
+
+      a {
+        color: $heritage_blue;
+
+        &:hover {
+          color: $heritage_gold !important;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

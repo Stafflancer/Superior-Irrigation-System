@@ -1,0 +1,79 @@
+{
+    "key": "group_62ab0620ea355",
+    "title": "Page: Product Subpages",
+    "fields": [
+        {
+            "key": "field_62ab062e48613",
+            "label": "Short Description",
+            "name": "short_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "98"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "99"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "100"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "101"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "102"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "103"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655375651
+}

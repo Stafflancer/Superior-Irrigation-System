@@ -1,0 +1,249 @@
+/*Media Query*/
+@media (min-width: 993px) and (max-width: 1199px){
+	header .h-menu-holder .h-menu>ul>li>a{
+		font-size: 14px;
+	}
+	header .h-menu-holder .custom-btn{
+		padding: 10px;
+	}
+	header .h-menu-holder .h-menu,
+	header .h-logo-holder{
+		margin-right: 15px ;
+	}
+}
+@media (max-width: 1200px){
+	/*fOOTER*/
+	/*footer .top-holder {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }*/
+    footer .top-holder .f-menu>ul>li {
+        margin-right: 20px !important;
+        margin-bottom: 20px;
+        max-width: none !important;
+    }
+    section{
+        padding: 60px 0 !important;
+    }
+    footer .bottom-holder{
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width:992px) {
+    .socials{
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 40px !important;
+        line-height: 40px !important;
+    }
+    h2{
+    	font-size: 34px !important;
+    	line-height: 42px !important;
+    }
+    h3 {
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+    .custom-btn {
+        padding: 11px 15px;
+        font-size: 18px;
+    }
+    section:first-of-type {
+	    margin-top: 70px;
+	}
+    /*Header*/
+    header{
+    	height: 70px;
+    }
+    header .h-logo-holder .h-logo {
+        max-width: 140px;
+    }
+    header .h-menu-holder .burger-btn {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
+    header .h-menu-holder .h-menu {
+        position: absolute;
+        background-color: #fff;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding:0 15px 20px 15px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: auto;
+        display: none;
+        box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
+    }
+    header .h-menu-holder .h-menu>div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 16px;
+    }
+    header .h-menu-holder .h-menu ul li {
+        width: 100%;
+    }
+    header .h-menu-holder .h-menu>ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    header .h-menu-holder .h-menu>ul>li {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 5px;
+        align-items: baseline;
+        font-size: 14px;
+    }
+    header .h-menu-holder .h-menu>ul>li:last-of-type {
+        margin-bottom: 0;
+    }
+    header .h-menu-holder .h-menu>ul>li:hover .sub-menu {
+        display: block;
+    }
+    header .h-menu-holder .h-menu>ul>li.menu-item-has-children::after {
+        top: 8px;
+        right: 0;
+    }
+    header .h-menu-holder .h-menu>ul>li .sub-menu {
+        position: static;
+        background-color: rgba(0, 0, 0, 0);
+        min-width: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 10px;
+    }
+    header .h-menu-holder .h-menu>ul>li .sub-menu li {
+        text-align: left;
+    }
+    header .h-menu-holder .wp-block-button:last-of-type {
+        margin: 0;
+    }
+	header .h-menu-holder .wp-block-button {
+        display: none;
+    }
+
+    /*Footer*/
+    /*footer .bottom-holder {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 20px;
+    }*/
+    footer .bottom-holder .socials {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    section{
+        padding: 40px 0 !important;
+    }
+    footer .top-holder{
+        flex-wrap: wrap;
+    }
+    footer .top-holder .footer-menu{width: 100%;}
+    footer .top-holder .footer-menu ul.sf-menu{
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+    .footer-menu ul#menu-footer-menu > li {
+        max-width: 100%;
+        flex: 100%;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 36px !important;
+        line-height: 36px !important;
+    }
+    h3 {
+        font-size: 26px !important;
+        line-height: 36px !important;
+    }
+    h5 {
+        font-size: 22px !important;
+        line-height: 22px !important;
+    }
+    .custom-btn {
+        font-size: 16px;
+    }
+    footer .top-holder .footer-menu ul.sf-menu{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 30px;
+    }
+}
+
+@media (max-width:576px) {
+    h1 {
+        font-size: 32px !important;
+        line-height: 32px !important;
+    }
+    h2 {
+	    font-size: 25px !important;
+	    line-height: 38px !important;
+	}
+    h3 {
+        font-size: 22px !important;
+        line-height: 32px !important;
+    }
+    h5 {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+   	/*Footer*/
+   	footer .f-logo-holder {
+        margin-bottom: 0;
+    }
+    footer .top-holder .f-menu>ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    footer .bottom-holder .bottom-text{
+    	font-size: 16px;
+    	line-height: 24px;
+    }
+    footer {
+	    padding: 30px 0;
+	}
+    section{
+        padding: 30px 0 !important;
+    }
+    .footer-menu ul#menu-footer-menu > li{
+        max-width: 100%; 
+        flex: 100%;
+    }
+
+    footer .top-holder .footer-menu ul.sf-menu{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .bottom-holder {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}

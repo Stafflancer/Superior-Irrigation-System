@@ -1,0 +1,27 @@
+select {
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: top 24px right 32px;
+	background-color: $primary;
+	border: 1px solid $black;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	@include font-size( 18px );
+	letter-spacing: 2.3px;
+	height: auto;
+	padding: 15px 52px 15px 19px;
+	margin-bottom: 0;
+	max-width: 100%;
+	text-transform: uppercase;
+	appearance: none;
+
+	@media screen and ( -ms-high-contrast: active ),
+		( -ms-high-contrast: none ) {
+		background-position: top 30px right 32px;
+	}
+
+	&::-ms-expand {
+		display: none;
+	}
+}

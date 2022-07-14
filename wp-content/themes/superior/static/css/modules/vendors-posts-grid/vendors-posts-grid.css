@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+.vendors-posts-grid {
+    padding: 25px 0 90px;
+}
+.vendors-posts-grid .section-holder {
+    max-width: 1167px;
+    margin: 0 auto;
+}
+.vendors-posts-grid .posts {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 40px;
+	row-gap: 73px;
+}
+.vendors-posts-grid .posts .vendor-post-card .white-block{
+    display: block;
+    box-shadow: 0px 0px 11px rgb(0 0 0 / 25%);
+    text-align: center;
+    min-height: 280px;
+    padding: 24px 17px;
+}
+.white-block .thumb {
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vendors-posts-grid  .white-block img {
+    max-width: 174px;
+}
+.link-holder {
+    text-align: center;
+    color: #1466bf;
+    margin-top: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+.white-block .title {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 800;
+    color: #1e3a71;
+    margin-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+/*Media Query */
+@media (max-width: 1200px) {
+    section.vendors-posts-grid {
+        padding-left: 0;
+    }
+} 
+@media (max-width: 992px) {
+	section.vendors-posts-grid {
+        padding: 50px 0;
+    }
+    .vendors-posts-grid .posts{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+	section.vendors-posts-grid {
+        padding: 40px 0 !important;
+    }
+    .link-holder{
+        margin-top: 15px;
+    }
+    .white-block .title{
+        font-size: 20px;
+        line-height: 24.8px;
+    }
+}
+
+@media (max-width: 576px){
+    .vendors-posts-grid .posts .vendor-post-card .white-block{
+        min-height: unset !important;
+    }
+    section.vendors-posts-grid {
+        padding: 30px 0 !important;
+    }
+	.vendors-posts-grid .posts{
+		grid-template-columns: 1fr;
+	}
+}

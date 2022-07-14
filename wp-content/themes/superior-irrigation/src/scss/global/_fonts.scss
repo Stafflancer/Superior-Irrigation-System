@@ -1,0 +1,19 @@
+// Font Family
+$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', roboto,
+	'Helvetica Neue', arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+	'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$exo-2: 'Exo 2', $font-family-sans-serif !default;
+$lato: 'Lato', $font-family-sans-serif !default;
+
+// Font family files.
+//@font-face {
+//	font-family: roboto;
+//	src: url( ../fonts/roboto/Roboto-Thin.eot );
+//	src: url( ../fonts/roboto/Roboto-Thin.eot?#iefix ) format( 'embedded-opentype' ),
+//		url( ../fonts/roboto/Roboto-Thin.woff2 ) format( 'woff2' ),
+//		url( ../fonts/roboto/Roboto-Thin.woff ) format( 'woff' ),
+//		url( ../fonts/roboto/Roboto-Thin.ttf ) format( 'truetype' );
+//	font-weight: 100;
+//	font-style: normal;
+//	font-display: swap;
+//}

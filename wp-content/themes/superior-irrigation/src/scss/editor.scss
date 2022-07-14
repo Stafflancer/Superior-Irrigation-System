@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*!
+ * Gutenberg Editor Styles
+ */
+
+@import "bootstrap/bootstrap";
+
+/** === Includes === */
+// WordPress
+@import 'wordpress-global/editor-style';
+@import 'wordpress-global/gutenberg';
+@import 'wordpress-global/wp-admin';
+@import 'wordpress-global/wp-overrides';
+
+// Blocks
+@import 'blocks/index';

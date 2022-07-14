@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+section.simple-cards-block-2 {
+    padding: 141px 0 101px;
+}
+section.simple-cards-block-2 .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+section.simple-cards-block-2 .cards .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 33.33%;
+    margin: 0 0 30px 0;
+    padding: 0 15px;
+}
+section.simple-cards-block-2 .cards .card:nth-of-type(1) .holder,
+section.simple-cards-block-2 .cards .card:nth-of-type(3n + 1) .holder {
+    background-color: #ed9c21;
+    border-color: #ed9c21;
+}
+section.simple-cards-block-2 .cards .card .holder .content{
+    color: #fff;
+}
+section.simple-cards-block-2 .cards .card .holder:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+section.simple-cards-block-2 .cards .card .holder:hover h3,
+section.simple-cards-block-2 .cards .card .holder:hover .content,
+section.simple-cards-block-2 .cards .card .holder:hover .btn-holder {
+    color: #000;
+}
+section.simple-cards-block-2 .cards .card:nth-of-type(2) .holder,
+section.simple-cards-block-2 .cards .card:nth-of-type(3n + 2) .holder {
+    background-color: #1466bf;
+    border-color: #1466bf;
+}
+section.simple-cards-block-2 .cards .card:nth-of-type(3) .holder,
+section.simple-cards-block-2 .cards .card:nth-of-type(3n + 3) .holder {
+    background-color: #808285;
+    border-color: #808285;
+}
+section.simple-cards-block-2 .cards .card .holder {
+    padding: 37px 35px 33px;
+    color: #000;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid transparent;
+    -webkit-transition: color 0.15s, background-color 0.15s;
+    -o-transition: color 0.15s, background-color 0.15s;
+    transition: color 0.15s, background-color 0.15s;
+}
+section.simple-cards-block-2 .cards .card h3 {
+    margin-bottom: 10px;
+    -webkit-transition: color 0.15s;
+    -o-transition: color 0.15s;
+    transition: color 0.15s;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+section.simple-cards-block-2 .cards .card .content {
+    font-size: 18px;
+    line-height: 28px;
+    -webkit-transition: color 0.15s;
+    -o-transition: color 0.15s;
+    transition: color 0.15s;
+    font-weight: 400;
+}
+section.simple-cards-block-2 .cards .card .btn-holder {
+    -webkit-transition: color 0.15s;
+    -o-transition: color 0.15s;
+    transition: color 0.15s;
+    padding-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-family: Outfit, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: auto;
+    color: #fff;
+}
+
+/*media query*/
+@media (max-width: 1200px) {
+    section.simple-cards-block-2 {
+        padding: 110px 0 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    section.simple-icons-block .columns{
+        margin-top: 30px;
+    }
+    section.simple-cards-block-2 {
+        padding: 50px 0;
+    }
+    section.simple-cards-block-2 .cards .card {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    section.simple-cards-block-2 .cards .card:last-child{
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    section.simple-cards-block-2 {
+        padding: 40px 0;
+    }
+    section.simple-cards-block-2 .cards .card .content {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    section.simple-cards-block-2 .cards .card .holder {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    section.simple-cards-block-2 {
+        padding: 30px 0;
+    }
+    section.simple-cards-block-2 .cards .card .btn-holder {
+        font-size: 16px;
+    }
+    section.simple-cards-block-2 .cards .card .content {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    section.simple-cards-block-2 .cards .card {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

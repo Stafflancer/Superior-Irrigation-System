@@ -1,0 +1,121 @@
+@import '../../src/scss/components/vars';
+
+section.simple-cards-block {
+  padding: 103px 0;
+
+  @media (max-width: $md) {
+    padding: 90px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 75px 0;
+  }
+
+  @media (max-width: $xs) {
+    padding: 60px 0;
+  }
+
+  .heading {
+    font-family: $montserrat;
+    font-weight: 700;
+    max-width: 635px;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+
+  .cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 58px auto 0;
+    max-width: 1011px;
+
+    @media (max-width: $md) {
+      justify-content: center;
+      margin: 55px -10px 0;
+    }
+
+    @media (max-width: $xs) {
+      margin: 40px -10px 0;
+    }
+
+    .card {
+      width: 33.33%;
+      max-width: 281px;
+      margin-bottom: 45px;
+
+      @media (max-width: $md) {
+        width: calc(50% - 20px);
+        max-width: 330px;
+        margin: 0 10px 45px;
+      }
+
+      @media (max-width: $xs) {
+        margin: 0 10px 30px;
+      }
+
+      &:hover {
+        color: $heritage_gold;
+      }
+
+      .image-holder {
+        overflow: hidden;
+        max-width: 281px;
+        max-height: 237px;
+        margin-bottom: 25px;
+
+        @media (max-width: $xs) {
+          margin-bottom: 15px;
+        }
+
+        img {
+          max-height: 237px;
+          display: block;
+          transition: transform $delay;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      h5 {
+        margin: 0 0 13px -28px;
+        font-weight: 700;
+        position: relative;
+
+        @media (max-width: $xs) {
+          margin: 0 0 8px -28px;
+        }
+
+        &::after {
+          content: '>';
+          font-family: $montserrat;
+          font-weight: 700;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 22px;
+          height: 22px;
+          font-size: 22px;
+          transform: translateX(3px);
+
+          @media (max-width: $xs) {
+            width: 17px;
+            height: 17px;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .description {
+        font-size: 15px;
+        margin-left: -8px;
+      }
+    }
+  }
+}

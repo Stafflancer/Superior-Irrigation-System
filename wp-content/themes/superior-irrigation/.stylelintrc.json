@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "@wordpress/stylelint-config/scss",
+    "stylelint-config-prettier",
+    "stylelint-config-twbs-bootstrap"
+  ],
+  "ignoreFiles": [
+    "scss/bootstrap/_reboot.scss"
+  ],
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-descending-specificity": null,
+    "block-no-empty": null,
+    "no-duplicate-selectors": null,
+    "font-family-no-duplicate-names": null,
+    "selector-class-pattern": null,
+    "at-rule-empty-line-before": null,
+    "declaration-colon-newline-after": null,
+    "declaration-no-important": true,
+    "function-parentheses-space-inside": null,
+    "selector-pseudo-class-parentheses-space-inside": null,
+    "declaration-property-value-disallowed-list": {
+      "border": "none",
+      "outline": "none"
+    },
+    "function-disallowed-list": [
+      "calc",
+      "lighten",
+      "darken"
+    ],
+    "property-disallowed-list": [
+      "border-radius",
+      "border-top-left-radius",
+      "border-top-right-radius",
+      "border-bottom-right-radius",
+      "border-bottom-left-radius",
+      "transition"
+    ],
+    "scss/dollar-variable-default": [
+      true,
+      {
+        "ignore": "local"
+      }
+    ],
+    "scss/selector-no-union-class-name": true
+  }
+}

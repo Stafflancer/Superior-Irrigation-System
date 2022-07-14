@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+//----------------------------------------
+// Theme Styles.
+//----------------------------------------
+@import "bootstrap/bootstrap";
+
+// My custom styles:
+// Add your scss files below to structure your project styles
+
+// Global
+//@import "global/rem-calc";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/accessibility";
+//@import "global/global";
+//@import "global/typography";
+
+// Components
+@import "components/icons";
+@import "components/buttons";
+//@import "components/dividers";
+//@import "components/featured-image";
+//@import "components/links";
+@import "components/select";
+
+// Modules
+//@import "modules/blocks";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/navigation";
+//@import "modules/pagination";
+
+// Blocks
+@import "blocks/index";
+
+// WordPress
+@import "wordpress-global/gutenberg";
+@import "wordpress-global/wp-admin";
+@import "wordpress-global/wp-overrides";

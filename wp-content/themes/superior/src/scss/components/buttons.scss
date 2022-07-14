@@ -1,0 +1,141 @@
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: $montserrat;
+  font-weight: 700;
+  background: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.custom-btn {
+  color: $white;
+  font-family: $montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 12px 28px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: background-color $delay;
+
+  @media (max-width: $md) {
+    padding: 11px 15px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 16px;
+  }
+
+  &.is-outlined {
+    border: 1px solid black;
+  }
+
+  &.btn-heritage-blue {
+    background-color: $heritage_blue;
+    &:hover {
+      background-color: $black;
+    }
+  }
+  &.btn-outline-heritage-blue {
+    border-color: $heritage_blue;
+    color: $heritage_blue;
+  }
+
+  &.btn-dark-blue {
+    background-color: $heritage_dark_blue;
+  }
+  &.btn-outline-dark-blue {
+    border-color: $heritage_dark_blue;
+    color: $heritage_dark_blue;
+  }
+
+  &.btn-blue {
+    background-color: $blue;
+  }
+  &.btn-outline-blue {
+    border-color: $blue;
+    color: $blue;
+  }
+
+  &.btn-baby-blue {
+    background-color: $heritage_baby_blue;
+  }
+  &.btn-outline-baby-blue {
+    border-color: $heritage_baby_blue;
+    color: $heritage_baby_blue;
+  }
+
+  &.btn-light-blue {
+    background-color: $heritage_light_blue;
+  }
+  &.btn-outline-light-blue {
+    border-color: $heritage_light_blue;
+    color: $heritage_light_blue;
+  }
+
+  &.btn-heritage-gold {
+    background-color: $heritage_gold;
+    &:hover {
+      background-color: $black;
+    }
+  }
+  &.btn-outline-heritage-gold {
+    border-color: $heritage_gold;
+    color: $heritage_gold;
+  }
+
+  &.btn-yellow {
+    background-color: $heritage_yellow;
+  }
+  &.btn-outline-yellow {
+    border-color: $heritage_yellow;
+    color: $heritage_yellow;
+  }
+
+  &.btn-dark-metal {
+    background-color: $heritage_dark_metal;
+  }
+  &.btn-outline-dark-metal {
+    border-color: $heritage_dark_metal;
+    color: $heritage_dark_metal;
+  }
+
+  &.btn-gray {
+    background-color: $heritage_gray;
+  }
+  &.btn-outline-gray {
+    border-color: $heritage_gray;
+    color: $heritage_gray;
+  }
+
+  &.btn-light-gray {
+    background-color: $heritage_light_gray;
+  }
+  &.btn-outline-light-gray {
+    border-color: $heritage_light_gray;
+    color: $heritage_light_gray;
+  }
+
+  &.btn-white {
+    background-color: $white;
+  }
+  &.btn-outline-white {
+    border-color: $white;
+    color: $white;
+  }
+
+  &.btn-black {
+    background-color: $black;
+  }
+  &.btn-outline-black {
+    border-color: $black;
+    color: $black;
+  }
+}

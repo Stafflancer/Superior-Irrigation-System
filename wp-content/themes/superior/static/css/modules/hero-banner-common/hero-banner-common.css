@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+section.hero-banner-common {
+    padding: 110px 0 103px;
+}
+section.hero-banner-common .section-holder {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.right-check-block {
+    padding-left: 88px;
+}
+section.hero-banner-common .section-holder > h3 {
+    font-weight: 700;
+    max-width: 457px;
+    font-size: 34px;
+    line-height: 44px;
+    margin-bottom: 0;
+    padding-top: 67px;
+}
+section.hero-banner-common .content {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 470px;
+    padding: 0 0 0 4px;
+}
+section.hero-banner-common .content ul br{
+    display: none;
+}
+.right-check-block strong {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+section.hero-banner-common .content ul {
+    padding: 0;
+    margin: 0;
+}
+section.hero-banner-common .content li {
+    padding-top: 2px;
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 22px;
+    padding-left: 26px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+}
+section.hero-banner-common .content li b {
+    font-weight: 700;
+}
+section.hero-banner-common .content li:last-of-type {
+    margin-bottom: 0;
+}
+section.hero-banner-common .content li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    background-image: url(../../../img/check.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section.hero-banner-common .btn-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+}
+.hero-banner-common .section-holder {
+    max-width: 1016px;
+    margin: 0 auto;
+}
+.hero-banner-common a.custom-btn {
+    min-width: 200px;
+    padding: 11px 20px;
+    font-weight: 600;
+}
+/*Media Screen*/
+@media (max-width: 992px) {
+    section.hero-banner-common .section-holder > h3 {
+        margin: 0 0 40px 0;
+        padding-top: 0 !important;
+        max-width: 100%;
+        flex: 100%;
+    }
+    section.hero-banner-common.has-background.image-as-background figure.image-background {
+        background-position: right;
+    }
+    .right-check-block {
+        padding-left: 0;
+    }
+    section.hero-banner-common .content {
+        max-width: 100%;
+    }
+    section.hero-banner-common .section-holder {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    section.hero-banner-common .btn-holder {
+        margin-top: 30px;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 576px) {
+    section.hero-banner-common .section-holder > h3 {
+        margin: 0 0 30px 0;
+    }
+    section.hero-banner-common .content {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

@@ -1,0 +1,211 @@
+@import '../../src/scss/components/vars';
+
+section.side-form-block-block {
+  padding: 72px 0 82px;
+  position: relative;
+
+  @media (max-width: $sm) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: $xs) {
+    padding: 40px 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 480px;
+    background-image: url("../../../img/shape.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  .section-holder {
+    display: flex;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
+  }
+
+  .content-holder {
+    padding-left: 66px;
+    padding-top: 88px;
+    max-width: 557px;
+
+    @media (max-width: $md) {
+      padding-left: 0;
+      padding-top: 0;
+      max-width: 100%;
+    }
+
+    h3 {
+      margin-bottom: 26px;
+      font-weight: 700;
+      font-size: 56px;
+
+      @media (max-width: $lg) {
+        font-size: 50px;
+      }
+
+      @media (max-width: $md) {
+        font-size: 45px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 40px;
+      }
+
+      @media (max-width: $xs) {
+        font-size: 35px;
+      }
+    }
+
+    .text {
+      max-width: 392px;
+      font-size: 17px;
+      line-height: 30px;
+
+      @media (max-width: $xs) {
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+  }
+
+  .form-holder {
+    width: 100%;
+    max-width: 520px;
+    margin-top: 30px;
+    margin-left: 91px;
+
+    @media (max-width: $md) {
+      margin-left: 0;
+      margin-top: 40px;
+      max-width: 100%;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .hs-error-msgs {
+        margin: 10px 0 0 0;
+        padding: 0;
+        font-size: 16px;
+
+        @media (max-width: $xs) {
+          margin: 8px 0;
+        }
+
+        li {
+          list-style-type: none;
+        }
+      }
+
+      .hs-form-field {
+        position: relative;
+        margin-bottom: 17px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        label:not(.hs-error-msg) {
+          position: absolute;
+          top: 16px;
+          left: 22px;
+          font-size: 18px;
+          font-family: $montserrat;
+          color: #082a48;
+          display: flex;
+          align-items: center;
+          transition: transform $delay, font-size $delay;
+
+          &.active {
+            font-size: 12px;
+            transform: translateY(-15px);
+          }
+        }
+      }
+
+      textarea {
+        width: 100%;
+        resize: none;
+        height: 56px;
+        overflow: hidden;
+        border-radius: 0;
+        font-family: $montserrat;
+        font-size: 16px;
+        border: 0;
+        padding: 20px 22px;
+        outline: none;
+      }
+
+      .hs_submit {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      input {
+        width: 100%;
+        border-radius: 0;
+        font-size: 16px;
+        font-family: $montserrat;
+        border: 0;
+
+        &:not([type="submit"]) {
+          padding: 0 22px;
+          min-width: 355px;
+          height: 56px;
+
+          @media (max-width: $xs) {
+            min-width: 0;
+          }
+        }
+
+        &[type="submit"] {
+          min-width: 189px;
+          color: $white;
+          font-family: $montserrat;
+          font-weight: 700;
+          font-size: 20px;
+          padding: 11px 30px;
+          text-align: center;
+          text-transform: uppercase !important;
+          display: inline-block;
+          border: 2px solid $heritage_gold;
+          background-image: none;
+          background-color: $heritage_gold;
+          border-radius: 0;
+          margin: 0 !important;
+          transition: background-color $delay, color $delay;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: $heritage_gold;
+          }
+
+          @media (max-width: $md) {
+            padding: 11px 15px;
+            font-size: 18px;
+          }
+
+          @media (max-width: $sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

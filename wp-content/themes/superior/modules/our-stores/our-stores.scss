@@ -1,0 +1,227 @@
+@import '../../src/scss/components/vars';
+
+section.our-stores {
+  padding: 50px 0 0;
+
+  .title-holder {
+    margin: 0 auto;
+    max-width: 714px;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 3px;
+      font-weight: 700;
+
+      @media (max-width: $xs) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .subtitle {
+      font-size: 14px;
+      line-height: 26px;
+      max-width: 355px;
+      margin: 0 auto;
+    }
+  }
+
+  #wpsl-wrap {
+    margin-top: 36px;
+
+    @media (max-width: $sm) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 20px;
+    }
+
+    .wpsl-search {
+      background-color: rgba(0,0,0,0);
+      padding: 0;
+      margin: 0;
+
+      #wpsl-search-wrap div {
+        float: none;
+        margin: 0;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+
+        @media (max-width: $sm) {
+          margin-bottom: 35px;
+        }
+
+        @media (max-width: $xs) {
+          margin-bottom: 20px;
+          flex-direction: column;
+        }
+
+        .wpsl-input {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @media (max-width: $xs) {
+            flex-direction: column;
+          }
+
+          input {
+            height: 46px;
+            border-radius: 0;
+            width: 100%;
+            max-width: 200px;
+            outline: none;
+            color: $heritage_blue;
+
+            @media (max-width: $xs) {
+              margin-bottom: 5px;
+            }
+          }
+
+          label {
+            float: none;
+            width: 100%;
+            display: block !important;
+            font-size: 14px;
+            font-family: $montserrat;
+            margin-right: 33px;
+            color: $heritage_blue;
+
+            @media (max-width: $sm) {
+              margin-right: 10px;
+            }
+
+            @media (max-width: $xs) {
+              margin-right: 0;
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        #wpsl-search-btn {
+          color: $white;
+          font-family: $montserrat;
+          font-size: 20px;
+          padding: 6px 25px;
+          text-align: center;
+          text-transform: uppercase !important;
+          display: inline-block;
+          font-weight: 700;
+          border: 2px solid $heritage_gold;
+          background-image: none;
+          background-color: $heritage_gold;
+          border-radius: 0;
+          margin: 0 !important;
+          transition: background-color $delay, color $delay;
+
+          &:hover {
+            color: $heritage_gold;
+          }
+
+          @media (max-width: $md) {
+            padding: 11px 15px;
+            font-size: 18px;
+          }
+
+          @media (max-width: $sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    #wpsl-gmap {
+      max-width: 687px;
+      z-index: 2;
+    }
+
+    #wpsl-result-list {
+      width: 100%;
+      padding: 30px 42px;
+      color: $heritage_blue;
+
+      @media (max-width: $md) {
+        padding: 10px;
+      }
+
+      ul {
+        max-width: 385px;
+        overflow: auto;
+      }
+
+      li {
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        padding: 13px 55px 13px 0 !important;
+        max-width: 375px;
+        border-bottom: 2px solid rgba(0,0,0,0);
+        transition: border-bottom-color $delay;
+
+        @media (max-width: $md) {
+          padding: 13px 10px 13px 0 !important;
+        }
+
+        @media (max-width: $sm) {
+          max-width: 100%;
+        }
+
+        &:hover {
+          border-bottom-color: $heritage_gold;
+
+          .wpsl-direction-wrap {
+            opacity: 1;
+          }
+        }
+
+        a {
+          color: $black;
+        }
+
+        p {
+          margin: 0;
+
+          &:first-of-type > strong:first-of-type {
+            display: none;
+          }
+        }
+
+        strong {
+          font-family: $montserrat;
+        }
+
+        .wpsl-direction-wrap {
+          margin-left: auto;
+          padding-left: 29px;
+          opacity: 0;
+          transition: opacity $delay;
+          position: relative;
+          white-space: nowrap;
+          text-decoration: underline;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 19px;
+            height: 25px;
+            background-image: url("../../../img/location-pin.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+          a {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

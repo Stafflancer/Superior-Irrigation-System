@@ -1,0 +1,76 @@
+//--------------------------------------------------------------
+// Gutenberg styles
+//--------------------------------------------------------------
+.has-overlay {
+
+	&::before {
+		content: '';
+		background-color: rgb( 0, 0, 0 );
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		opacity: 0.5;
+	}
+}
+
+//--------------------------------------------------------------
+// Blocks - Colors
+//--------------------------------------------------------------
+// Base Color Palette
+@each $color, $code in $heritage-colors {
+	.has-#{$color}-background-color {
+		background-color: $code;
+	}
+
+	.has-#{$color}-color {
+		color: $code;
+	}
+
+	.has-overlay-#{$color} {
+
+		&::before {
+			background-color: $code;
+		}
+	}
+}
+
+// Button
+//.wp-block-buttons {
+	// Add general theme button styling
+	//.wp-block-button__link {
+	//	//@extend .btn;
+	//	@each $color, $code in $heritage-colors {
+	//		&.has-#{$color}-background-color {
+	//			background-color: $code;
+	//		}
+	//
+	//		&.has-#{$color}-color {
+	//			color: color-contrast($code);
+	//		}
+	//	}
+	//
+	//	// Add outline styles
+	//	&.is-outlined {
+	//		background: transparent;
+	//
+	//		@each $color, $code in $heritage-colors {
+	//			&.has-#{$color}-border-color {
+	//				border-color: $code;
+	//				color: color-contrast($code);
+	//			}
+	//		}
+	//	}
+	//}
+
+	// Add special styling for squared buttons
+	//&.is-style-squared .wp-block-button__link {
+	//	border-radius: 0;
+	//}
+
+	// Set transparent background to block for outline button
+//}

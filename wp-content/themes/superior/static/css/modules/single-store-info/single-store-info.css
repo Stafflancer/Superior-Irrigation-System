@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+section.single-store-info {
+    padding: 114px 0 97px;
+}
+section.single-store-info .cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.single-store-info .cols .info-col {
+    width: 100%;
+    max-width: calc(100% - 687px);
+    flex: calc(100% - 687px);
+    padding-top: 27px;
+}
+section.single-store-info .cols .map-col {
+    width: 100%;
+    max-width: 687px;
+    flex: 687px;
+}
+
+section.single-store-info .map-col .gallery {
+    position: relative;
+    margin-top: 30px;
+}
+
+section.single-store-info .map-col .gallery .img {
+    padding: 0 8px;
+}
+section.single-store-info .map-col .gallery .img img {
+    display: block;
+    width: 100%;
+    height: 179px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+section.single-store-info .map-col .gallery .next-btn,
+section.single-store-info .map-col .gallery .prev-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section.single-store-info .map-col .gallery .next-btn:hover svg,
+section.single-store-info .map-col .gallery .prev-btn:hover svg {
+    fill: #b2b3b6;
+}
+section.single-store-info .map-col .gallery .next-btn svg,
+section.single-store-info .map-col .gallery .prev-btn svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    fill: #A9ABAC;
+    -webkit-transition: fill 0.15s;
+    -o-transition: fill 0.15s;
+    transition: fill 0.15s;
+    cursor: pointer;
+}
+section.single-store-info .map-col .gallery .prev-btn {
+    left: -40px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+section.single-store-info .map-col .gallery .next-btn {
+    right: -40px;
+}
+
+section.single-store-info .info-col .breadcrumbs {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-left: 0;
+}
+section.single-store-info .info-col .breadcrumbs span{
+	color: #1e3a71;
+}
+section.single-store-info .info-col h2 {
+    font-size: 34px;
+    color: #1e3060;
+    margin: 0 0 24px 0;
+    line-height: 44px;
+    font-weight: 700;
+}
+section.single-store-info .info-col .info {
+    font-size: 20px;
+    line-height: 27px;
+    color: #54575a;
+    font-weight: 400;
+}
+section.single-store-info .info-col .info a {
+    color: #54575a;
+}
+section.single-store-info .info-col .info a:hover {
+    color: #ac1c34;
+}
+section.single-store-info .info-col .custom-btn {
+    margin-top: 40px;
+    font-size: 16px;
+    padding: 6px 22px;
+    min-width: 235px;
+}
+
+/*media Query*/
+
+@media (max-width: 1200px) {
+    section.single-store-info .cols .info-col {
+        padding-left: 0;
+    }
+}
+@media (max-width: 992px) {
+    section.single-store-info .map-col .gallery {
+        padding: 0 30px;
+    }
+    section.single-store-info .cols .info-col {
+        padding-right: 0;
+        max-width: 100%;
+        margin-bottom: 40px;
+        padding-top: 0;
+    }
+    section.single-store-info .cols .map-col {
+        max-width: 100%;
+    }
+    section.single-store-info .map-col .gallery .prev-btn {
+        left: -5px;
+    }
+    section.single-store-info .map-col .gallery .next-btn {
+        right: -5px;
+    }
+}
+@media (max-width: 768px) {
+    section.single-store-info .map-col .gallery .img img {
+        height: 150px;
+    }
+    section.single-store-info .info-col h2{
+        margin-bottom: 10px !important;
+    }
+    section.single-store-info .info-col .info {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    section.single-store-info .info-col .custom-btn {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 576px) {
+    section.single-store-info .map-col .gallery {
+        padding: 0;
+        margin-top: 20px;
+    }
+    section.single-store-info .map-col .gallery .next-btn {
+        right: 0;
+    }
+    section.single-store-info .info-col .info {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    section.single-store-info .info-col .custom-btn {
+        min-width: 0;
+    }
+    section.single-store-info .map-col .gallery .prev-btn {
+        left: 0;
+    }
+    section.single-store-info .map-col .gallery .img img {
+        height: 130px;
+    }
+    section.single-store-info .map-col .wpsl-gmap-canvas {
+        height: 350px !important;
+    }
+}

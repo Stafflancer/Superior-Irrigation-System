@@ -1,0 +1,6 @@
+dist
+node_modules
+vendor
+src/scss/bootstrap
+*.min.js
+!/.*.js

@@ -1,0 +1,5 @@
+body#tinymce {
+	height: auto; // Fix editor style bug
+	max-width: 100%; // Give the editor a max-width
+	padding: 1.25rem;
+}

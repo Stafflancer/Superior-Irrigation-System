@@ -1,0 +1,22 @@
+//--------------------------------------------------------------
+// Hero Block
+//--------------------------------------------------------------
+.hero-banner {
+	// Text block.
+	&__container {
+		min-height: 32rem;
+	} // .hero-banner__container
+} // .hero-banner
+
+//-----------------------------------------
+// IE Fixes
+//-----------------------------------------
+.ie .hero {
+	// IE seems to have some width issues with flexbox,
+	// the text is rendered wider than its container
+	// and doesn't wrap. This fixes that.
+	.hero-title,
+	.hero-content {
+		width: 100%;
+	} // .hero-title, .hero-content
+} // .ie .hero

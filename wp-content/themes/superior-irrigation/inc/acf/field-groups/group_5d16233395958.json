@@ -1,0 +1,57 @@
+{
+    "key": "group_5d16233395958",
+    "title": "Fields: Color Picker — To Clone",
+    "fields": [
+        {
+            "key": "field_5d16235b009ea",
+            "label": "Color Picker",
+            "name": "color_picker",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#004ea8; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Blue<\/div>",
+                "light-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#418fde; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Light Blue<\/div>",
+                "sky-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#489fdf; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Sky Blue<\/div>",
+                "yellow": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#f9e547; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Yellow<\/div>",
+                "charcoal": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#1d252d; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Charcoal<\/div>",
+                "gray": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#5b6770; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Gray<\/div>",
+                "light-gray": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#efefef; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Light Gray<\/div>",
+                "white": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#fff; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>White<\/div>",
+                "black": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:#000; border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Black<\/div>"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1644985897
+}

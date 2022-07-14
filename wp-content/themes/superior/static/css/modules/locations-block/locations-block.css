@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+section.locations-block {
+    padding: 89px 0 90px;
+    margin-bottom: 82px;
+}
+section.locations-block h3 {
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+section.locations-block .subtitle {
+    text-align: center;
+    color: #ed9c21;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 19px 0 0 0;
+}
+section.locations-block .locations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 805px;
+    margin: 45px auto 0;
+    font-size: 18px;
+    padding-left: 70px;
+}
+section.locations-block .locations .location {
+    width: 33.33%;
+    margin-bottom: 12px;
+    text-align: left;
+}
+section.locations-block .locations .location a {
+    color: #1e3a71;
+    font-size: 20px;
+    line-height: 27px;
+}
+section.locations-block .locations .location a:hover {
+    color: #ed9c21 !important;
+    text-decoration: underline;
+}
+
+/*Delivery page*/
+body.page-delivery .locations-block{
+    margin-bottom: 0 !important;
+    padding: 95px 0;
+}
+/*MEDIA qQuery*/
+@media (max-width: 992px) {
+    section.locations-block .subtitle {
+        margin: 10px 0 0 0;
+    }
+    section.locations-block{
+    	margin-bottom: 0 !important;
+    }
+}
+@media (max-width: 768px) {
+    section.locations-block .locations .location {
+        padding-left: 20px;
+        text-align: center;
+    	margin-bottom: 0;
+    }
+    section.locations-block .locations{
+    	padding-left: 0 !important;
+    	margin: 25px auto 0;
+    }
+}
+@media (max-width: 576px) {
+    section.locations-block .locations .location {
+        width: 50%;
+        padding-left: 0;
+    }
+    section.locations-block .subtitle {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 5px 0 0 0;
+    }
+}

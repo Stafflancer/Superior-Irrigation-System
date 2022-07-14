@@ -1,0 +1,30 @@
+//--------------------------------------------------------------
+// Admin Overrides & Styles
+//--------------------------------------------------------------
+// Fix the issue where the WP admin-bar overlaps the mobile menu
+#wpadminbar {
+	position: fixed;
+}
+
+// Make sure that the WP admin-bar does not overlap theme components
+body.admin-bar {
+	// Offset sticky top bar
+	&.topbar-fixed {
+
+		.sticky.fixed {
+			margin-top: 2rem;
+		}
+	}
+
+	// Offset mobile off-canvas menu
+	&.offcanvas {
+
+		.off-canvas.is-open {
+			top: 2.875rem;
+
+			@include media-breakpoint-up( md ) {
+				top: 2rem;
+			}
+		}
+	}
+}

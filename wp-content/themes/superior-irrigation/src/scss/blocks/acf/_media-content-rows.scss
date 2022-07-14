@@ -1,0 +1,26 @@
+//--------------------------------------------------------------
+// Media Content Rows Block
+//--------------------------------------------------------------
+.media-content-rows {
+	.container {
+		&:not( .full-width ) {
+			padding-bottom: 2.5rem;
+		}
+
+		&.full-width {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+
+	.content-row-text {
+		padding-top: 8%;
+		padding-bottom: 8%;
+	}
+
+	.is-image-fill {
+		.content-row-media {
+			min-height: 25rem;
+		}
+	}
+}

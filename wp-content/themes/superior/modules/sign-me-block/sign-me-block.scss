@@ -1,0 +1,115 @@
+@import '../../src/scss/components/vars';
+
+section.sign-me-block {
+  padding: 118px 0 128px;
+  background-position: top;
+
+  @media (max-width: $sm) {
+    padding: 100px 0 80px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 80px 0 60px;
+  }
+
+  h3 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 11px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 14px;
+
+    @media (max-width: $sm) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 14px;
+    }
+  }
+
+  .form-holder {
+    width: 100%;
+    margin-top: 26px;
+
+    @media (max-width: $xs) {
+      margin-top: 20px;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: $xs) {
+        flex-direction: column;
+      }
+
+      .hs-error-msgs {
+        margin: 10px 0 0 0;
+        padding: 0;
+        font-size: 16px;
+
+        @media (max-width: $xs) {
+          margin: 8px 0;
+        }
+
+        li {
+          list-style-type: none;
+        }
+      }
+
+      input {
+        width: 100%;
+        height: 46px;
+        border-radius: 0;
+        font-size: 13px;
+        font-family: $montserrat;
+        border: 0;
+
+        &:not([type="submit"]) {
+          padding: 0 18px;
+          min-width: 498px;
+
+          @media (max-width: $xs) {
+            min-width: 0;
+          }
+        }
+
+        &[type="submit"] {
+          color: $white;
+          font-family: $montserrat;
+          font-weight: 700;
+          font-size: 20px;
+          padding: 5px 23px;
+          text-align: center;
+          text-transform: uppercase !important;
+          display: inline-block;
+          border: 2px solid $heritage_gold;
+          background-image: none;
+          background-color: $heritage_gold;
+          border-radius: 0;
+          margin: 0 !important;
+          transition: background-color $delay, color $delay;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: $heritage_gold;
+          }
+
+          @media (max-width: $md) {
+            padding: 11px 15px;
+            font-size: 18px;
+          }
+
+          @media (max-width: $sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
